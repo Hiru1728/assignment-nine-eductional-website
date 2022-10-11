@@ -1,5 +1,5 @@
 import React from 'react';
-import img from '../../images/Quize.png';
+import img from '../../images/Quize-removebg-preview.png';
 import './Headers.css'
 
 const Headers = () => {

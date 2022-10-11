@@ -1,9 +1,27 @@
 .quize {
     border: 2px solid grey;
+    border-radius: 15px;
+    padding: 10px;
 }
 
 
 .quize img {
     height: 250px;
+    width: 250px;
     background-color: slategray;
+}
+
+.quize-details {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn-start {
+    height: 40px;
+    width: 150px;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    color: white;
 }

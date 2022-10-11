@@ -1,14 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Quiz.css'
 
 const Quiz = ({ quize }) => {
-    const { name, total, logo } = quize;
+    const { id, name, total, logo } = quize;
     return (
         <div className='quize'>
             <img src={logo} alt="" />
-            <h1>{name}</h1>
-            <p>{total}</p>
-            <button>Start Practice</button>
+            <div className='quize-details'>
+                <h4>Course: {name}</h4>
+                <h4>Total Question : {total}</h4>
+                <button className='btn-start'><Link to={`/quize/${id}`}>Start Practice</Link></button>
+            </div>
         </div>
     );
 };

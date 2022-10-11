@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Headers from '../Headers/Headers';
 import './Header.css'
 
 const Header = () => {
@@ -16,7 +15,6 @@ const Header = () => {
                     <Link to='/resources'>Resources</Link>
                 </div>
             </div>
-            <Headers></Headers>
         </div>
     );
 };

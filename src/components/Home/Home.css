@@ -1,0 +1,11 @@
+.quiz-topic-section {
+    margin: 0 100px;
+}
+
+.quize-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    background-color: gainsboro;
+    border-radius: 15px;
+}

@@ -1,0 +1,9 @@
+.quize {
+    border: 2px solid grey;
+}
+
+
+.quize img {
+    height: 250px;
+    background-color: slategray;
+}

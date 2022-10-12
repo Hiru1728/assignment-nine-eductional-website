@@ -10,7 +10,6 @@ const Home = () => {
     return (
         <div className='quiz-topic-section'>
             <Headers></Headers>
-            <h2>This is Home Section : {quizeTopics.length}</h2>
             <div className='quize-section'>
                 {
                     quizeTopics.map(quize => <Quiz

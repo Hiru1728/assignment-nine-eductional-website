@@ -7,8 +7,7 @@ const Resources = () => {
         <div>
             <h1>What is the purpose of react router?</h1>
             <p></p>
-            {/* <button onClick={notify}>Toast</button> */}
-            {/* <Toaster /> */}
+
             <h1>How does context API works?</h1>
 
         </div>

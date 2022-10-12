@@ -13,7 +13,6 @@ const QuizDetails = () => {
                 questions.map((question, idx) => <Question
                     key={question.id}
                     question={question}
-                    num={idx}
                 ></Question>)
             }
         </div>

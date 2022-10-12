@@ -10,7 +10,8 @@ const Quiz = ({ quize }) => {
             <div className='quize-details'>
                 <h4>Course: {name}</h4>
                 <h4>Total Quiz : {total}</h4>
-                <button className='btn-start'><Link to={`/quize/${id}`}>Start Practice</Link></button>
+                <button className='btn-start'><Link to={`/quize/${id}`}>Start Practice
+                </Link></button>
             </div>
         </div>
     );

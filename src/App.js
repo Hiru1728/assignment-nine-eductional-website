@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
+import Blog from './components/Blog/Blog';
 import Home from './components/Home/Home';
 import QuizDetails from './components/QuizDetails/QuizDetails';
 import Resources from './components/Resources/Resources';
@@ -22,8 +23,8 @@ function App() {
           element: <Statistics></Statistics>
         },
         {
-          path: '/resources',
-          element: <Resources></Resources>
+          path: '/blog',
+          element: <Blog></Blog>
         },
         {
           path: '/quize/:quizeId',
@@ -31,7 +32,17 @@ function App() {
           element: < QuizDetails ></QuizDetails >
         }
       ]
+    },
+    {
+      path: '/resources',
+      element: <Resources></Resources>
+    },
+    {
+      path: '*',
+      element: <div>This route Not Found.</div>
     }
+
+
   ])
   return (
     <div className="App">

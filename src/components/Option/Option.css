@@ -1,10 +1,16 @@
 .option {
-    display: grid;
-
-    gap: 5px;
     background-color: gray;
     padding: 4px;
     margin: 2px 20px;
     border-radius: 10px;
     color: white
+}
+
+@media only screen and (min-width: 600px) {
+    .option {
+        width: 100%;
+        margin: 2px 0;
+        border-radius: auto;
+        padding: auto;
+    }
 }

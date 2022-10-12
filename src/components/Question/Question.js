@@ -20,19 +20,21 @@ const Question = ({ question }) => {
 
     return (
         <div className='question'>
-            <h3>Quiz {id} : {finalRealName}</h3>
+            <h3>Quiz : {finalRealName}</h3>
 
             <button onClick={notify}>
                 <FontAwesomeIcon icon={faEye}></FontAwesomeIcon>
             </button>
             <Toaster />
+            <div className='option-section'>
 
-            {
-                options.map((option, idx) => <Option
-                    option={option}
-                    correctAnswer={correctAnswer}
-                ></Option>)
-            }
+                {
+                    options.map((option, idx) => <Option
+                        option={option}
+                        correctAnswer={correctAnswer}
+                    ></Option>)
+                }
+            </div>
         </div>
     );
 };

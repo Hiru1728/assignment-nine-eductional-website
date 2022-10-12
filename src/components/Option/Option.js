@@ -1,15 +1,25 @@
 import React from 'react';
+import toast from 'react-hot-toast';
+import './Option.css'
 
-const Option = ({ option }) => {
+const Option = ({ option, correctAnswer }) => {
 
-    const results = ['Right Answer', 'Wrong Answer'];
+    const optionhandler = (name) => {
+        let real = name.option;
+
+        if (real === correctAnswer) {
+            toast('correct Answer : ' + (real));
+        }
+        else {
+            toast('Wrong Answer : ' + (real));
+        }
+    }
     return (
-        <div>
+        <div className='option'>
             {
-                results.map(result => (<div>
-                    <input type="radio" value={result} name="radiovalues" />
-                    <b>{option}</b>
-                </div>))
+
+                <button onClick={() => optionhandler({ option })}>{option}</button>
+
             }
         </div>
     );

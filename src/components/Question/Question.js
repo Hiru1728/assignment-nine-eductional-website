@@ -8,6 +8,7 @@ import './Question.css'
 const Question = ({ question }) => {
     const { id, options, correctAnswer } = question;
 
+
     const notify = () => toast('Correct Answer : ' + correctAnswer);
 
     const name = question.question;
@@ -28,9 +29,8 @@ const Question = ({ question }) => {
 
             {
                 options.map((option, idx) => <Option
-                    key={idx}
                     option={option}
-
+                    correctAnswer={correctAnswer}
                 ></Option>)
             }
         </div>

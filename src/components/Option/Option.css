@@ -1,0 +1,10 @@
+.option {
+    display: grid;
+
+    gap: 5px;
+    background-color: gray;
+    padding: 4px;
+    margin: 2px 20px;
+    border-radius: 10px;
+    color: white
+}
